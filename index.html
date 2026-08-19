@@ -8,7 +8,8 @@
   <title>ТЯГА 24 — эвакуатор в Екатеринбурге</title>
   <link rel="preload" href="assets/fonts/alumni-sans-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/golos-text-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/hero-tow-truck.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="assets/hero-mobile-v2.webp" as="image" type="image/webp" media="(max-width: 767px)" fetchpriority="high">
+  <link rel="preload" href="assets/hero-tow-truck.webp" as="image" type="image/webp" media="(min-width: 768px)" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
   <script src="assets/vendor/gsap.min.js" defer></script>
   <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
@@ -51,23 +52,26 @@
     </div>
 
     <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
-      <span></span><span></span>
+      <span></span><span></span><span></span>
     </button>
 
-    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" hidden>
-      <a href="#hero">Главная</a>
-      <a href="#services">Услуги</a>
-      <a href="#prices">Цены</a>
-      <a href="#fleet" aria-label="Сервис: техника, процесс работы и преимущества">Сервис</a>
-      <a href="#coverage" aria-label="О нас: зона работы, отзывы и контакты">О нас</a>
-      <a class="mobile-menu__phone" href="tel:+73432004040">+7 (343) 200-40-40</a>
-    </nav>
   </header>
+
+  <div class="menu-backdrop" data-menu-backdrop aria-hidden="true"></div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" aria-hidden="true">
+    <a href="#hero">Главная</a>
+    <a href="#services">Услуги</a>
+    <a href="#prices">Цены</a>
+    <a href="#fleet" aria-label="Сервис: техника, процесс работы и преимущества">Сервис</a>
+    <a href="#coverage" aria-label="О нас: зона работы, отзывы и контакты">О нас</a>
+    <a class="mobile-menu__phone" href="tel:+73432004040">+7 (343) 200-40-40</a>
+  </nav>
 
   <main id="main">
     <section class="hero" id="hero" aria-labelledby="hero-title">
       <div class="hero__media" aria-hidden="true">
         <picture>
+          <source media="(max-width: 767px)" srcset="assets/hero-mobile-v2.webp" type="image/webp">
           <source srcset="assets/hero-tow-truck.webp" type="image/webp">
           <img src="assets/hero-tow-truck.png" alt="" width="1680" height="945" fetchpriority="high">
         </picture>
@@ -277,7 +281,13 @@
     </section>
 
     <section class="final-cta" id="contact" aria-labelledby="final-title">
-      <div class="final-cta__media" aria-hidden="true"><img src="assets/final-cta-v2.webp" alt="" width="1536" height="1024" loading="lazy"></div>
+      <div class="final-cta__media" aria-hidden="true">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/final-mobile-v2.webp" type="image/webp">
+          <source srcset="assets/final-cta-v2.webp" type="image/webp">
+          <img src="assets/final-cta-v2.webp" alt="" width="1536" height="1024" loading="lazy">
+        </picture>
+      </div>
       <div class="final-cta__content section-shell">
         <p class="section-kicker">Помощь на дороге / 24/7</p>
         <h2 id="final-title"><span>НУЖНА ПОМОЩЬ</span><span>НА ДОРОГЕ?</span></h2>
@@ -319,7 +329,7 @@
       <div class="footer__documents"><span>Документы</span><a href="legal.html#privacy">Политика конфиденциальности</a><a href="legal.html#consent">Согласие на обработку данных</a><a href="legal.html#cookies">Использование cookie</a><a href="legal.html#details">Реквизиты</a></div>
     </div>
     <div class="footer__notice section-shell">Информация на сайте носит справочный характер и не является публичной офертой. Перед публикацией заполните реквизиты и проверьте документы с юристом.</div>
-    <div class="footer__bottom section-shell"><span>© 2026 ТЯГА 24</span><span>Эвакуация автомобилей</span></div>
+    <div class="footer__bottom section-shell"><span>© 2026 ТЯГА 24</span><span>Эвакуация автомобилей</span><span>Разработано моментом</span></div>
   </footer>
 </body>
 </html>

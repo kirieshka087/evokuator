@@ -3,13 +3,18 @@ const body = document.body;
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const menuButton = document.querySelector('.menu-toggle');
 const mobileMenu = document.querySelector('#mobile-menu');
+const menuBackdrop = document.querySelector('[data-menu-backdrop]');
 
 function setMenu(open) {
   if (!menuButton || !mobileMenu) return;
   menuButton.setAttribute('aria-expanded', String(open));
   menuButton.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
-  mobileMenu.hidden = !open;
+  mobileMenu.setAttribute('aria-hidden', String(!open));
+  mobileMenu.inert = !open;
+  body.classList.toggle('menu-open', open);
 }
+
+if (mobileMenu) mobileMenu.inert = true;
 
 menuButton?.addEventListener('click', () => {
   setMenu(menuButton.getAttribute('aria-expanded') !== 'true');
@@ -19,12 +24,18 @@ mobileMenu?.addEventListener('click', (event) => {
   if (event.target.closest('a')) setMenu(false);
 });
 
+menuBackdrop?.addEventListener('click', () => setMenu(false));
+
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') setMenu(false);
 });
 
 document.addEventListener('click', (event) => {
-  if (!event.target.closest('.site-header')) setMenu(false);
+  if (!event.target.closest('.site-header, .mobile-menu')) setMenu(false);
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1100) setMenu(false);
 });
 
 function runPreloader() {
