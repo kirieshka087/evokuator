@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070808">
+  <meta name="description" content="Эвакуатор в Екатеринбурге и области. Подача от 20 минут, работа 24/7, бережная погрузка.">
+  <title>ТЯГА 24 — эвакуатор в Екатеринбурге</title>
+  <link rel="preload" href="assets/fonts/alumni-sans-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/golos-text-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/hero-tow-truck.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="is-loading">
+  <div class="preloader" data-preloader aria-live="polite" aria-label="Загрузка сайта">
+    <div class="preloader__center">
+      <div class="preloader__brand">
+        <span class="brand__mark" aria-hidden="true">Т</span>
+        <span class="brand__name">ТЯГА <b>24</b></span>
+      </div>
+      <div class="preloader__track" aria-hidden="true"><i data-preloader-track></i></div>
+      <div class="preloader__meta">
+        <span>Екатеринбург / 24/7</span>
+        <strong data-preloader-value>0%</strong>
+      </div>
+    </div>
+  </div>
+  <noscript><style>.preloader{display:none!important}body.is-loading{overflow:auto}</style></noscript>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#hero" aria-label="ТЯГА 24 — на главную">
+      <span class="brand__mark" aria-hidden="true">Т</span>
+      <span class="brand__name">ТЯГА <b>24</b></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#hero">Главная</a>
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#fleet" aria-label="Сервис: техника, процесс работы и преимущества">Сервис</a>
+      <a href="#coverage" aria-label="О нас: зона работы, отзывы и контакты">О нас</a>
+    </nav>
+
+    <div class="header-contact">
+      <span>Работаем 24/7</span>
+      <a href="tel:+73432004040">+7 (343) 200-40-40</a>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span>
+    </button>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" hidden>
+      <a href="#hero">Главная</a>
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#fleet" aria-label="Сервис: техника, процесс работы и преимущества">Сервис</a>
+      <a href="#coverage" aria-label="О нас: зона работы, отзывы и контакты">О нас</a>
+      <a class="mobile-menu__phone" href="tel:+73432004040">+7 (343) 200-40-40</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <picture>
+          <source srcset="assets/hero-tow-truck.webp" type="image/webp">
+          <img src="assets/hero-tow-truck.png" alt="" width="1680" height="945" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <div class="hero__content section-shell">
+        <div class="hero__copy">
+          <div class="eyebrow"><span>24/7</span> Подача от 20 минут</div>
+          <h1 id="hero-title"><span>ЭВАКУАТОР</span><span>БЕЗ ОЖИДАНИЯ</span></h1>
+          <p class="hero__lead">Бережно погрузим и доставим автомобиль по Екатеринбургу и области. Стоимость фиксируем до выезда.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#contact"><span>Вызвать эвакуатор</span><i aria-hidden="true">↗</i></a>
+            <a class="button button--ghost" href="#contact"><span>Рассчитать стоимость</span><i aria-hidden="true">↗</i></a>
+          </div>
+        </div>
+
+        <div class="hero__facts" aria-label="Ключевые преимущества">
+          <article><span>01</span><strong>Подача<br>от 20 минут</strong></article>
+          <article><span>02</span><strong>Работаем<br>24/7</strong></article>
+          <article><span>03</span><strong>Легковые<br>и внедорожники</strong></article>
+          <article><span>04</span><strong>Город<br>и область</strong></article>
+        </div>
+      </div>
+
+      <div class="hero__status section-shell" aria-hidden="true">
+        <span>ЕКАТЕРИНБУРГ</span><span class="status-line"></span><span>56.8389° N</span><span>60.6057° E</span>
+      </div>
+    </section>
+
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="services__sticky">
+        <header class="services__intro section-shell">
+          <div>
+            <p class="section-kicker">Услуги / 01—06</p>
+            <h2 id="services-title" class="section-title"><span>ЗАБЕРЁМ.</span><span>ДОСТАВИМ.</span></h2>
+          </div>
+          <div class="scroll-hint" aria-hidden="true"><span>Скролл вниз</span><b>↓</b></div>
+        </header>
+
+        <div class="services__track" data-services-track>
+          <article class="service-card service-card--one" role="button" tabindex="0" data-service="passenger" aria-label="Подробнее об эвакуации легкового автомобиля">
+            <img src="assets/service-passenger-v2.webp" alt="Погрузка легкового автомобиля на сдвижную платформу" width="1536" height="1024" loading="lazy">
+            <span class="service-card__shade" aria-hidden="true"></span>
+            <span class="service-card__index">01</span>
+            <div class="service-card__body"><h3>ЛЕГКОВЫЕ АВТОМОБИЛИ</h3><p>Погрузка и перевозка машин любого класса</p></div>
+            <span class="service-card__open" aria-hidden="true">Нажать</span>
+          </article>
+          <article class="service-card service-card--two" role="button" tabindex="0" data-service="suv" aria-label="Подробнее об эвакуации внедорожника">
+            <img src="assets/service-suv-v2.webp" alt="Перевозка внедорожника на усиленной платформе" width="1536" height="1024" loading="lazy">
+            <span class="service-card__shade" aria-hidden="true"></span>
+            <span class="service-card__index">02</span>
+            <div class="service-card__body"><h3>ВНЕДОРОЖНИКИ</h3><p>Техника под массу и габариты автомобиля</p></div>
+            <span class="service-card__open" aria-hidden="true">Нажать</span>
+          </article>
+          <article class="service-card service-card--three" role="button" tabindex="0" data-service="accident" aria-label="Подробнее об эвакуации после ДТП">
+            <img src="assets/service-accident-v2.webp" alt="Погрузка повреждённого автомобиля после ДТП" width="1536" height="1024" loading="lazy">
+            <span class="service-card__shade" aria-hidden="true"></span>
+            <span class="service-card__index">03</span>
+            <div class="service-card__body"><h3>ПОСЛЕ ДТП</h3><p>Аккуратная работа с заблокированными колёсами</p></div>
+            <span class="service-card__open" aria-hidden="true">Нажать</span>
+          </article>
+          <article class="service-card service-card--four" role="button" tabindex="0" data-service="breakdown" aria-label="Подробнее об эвакуации неисправного автомобиля">
+            <img src="assets/service-breakdown-v2.webp" alt="Неисправный автомобиль и прибывший эвакуатор" width="1536" height="1024" loading="lazy">
+            <span class="service-card__shade" aria-hidden="true"></span>
+            <span class="service-card__index">04</span>
+            <div class="service-card__body"><h3>НЕИСПРАВНЫЕ АВТО</h3><p>Из двора, паркинга или с обочины</p></div>
+            <span class="service-card__open" aria-hidden="true">Нажать</span>
+          </article>
+          <article class="service-card service-card--five" role="button" tabindex="0" data-service="region" aria-label="Подробнее о междугородней перевозке">
+            <img src="assets/service-region-v2.webp" alt="Междугородняя перевозка автомобиля по трассе" width="1536" height="1024" loading="lazy">
+            <span class="service-card__shade" aria-hidden="true"></span>
+            <span class="service-card__index">05</span>
+            <div class="service-card__body"><h3>МЕЖГОРОД</h3><p>Перевозка по области и между городами</p></div>
+            <span class="service-card__open" aria-hidden="true">Нажать</span>
+          </article>
+          <article class="service-card service-card--six" role="button" tabindex="0" data-service="crane" aria-label="Подробнее об эвакуаторе с манипулятором">
+            <img src="assets/service-crane-v2.webp" alt="Манипулятор поднимает автомобиль краном" width="1536" height="1024" loading="lazy">
+            <span class="service-card__shade" aria-hidden="true"></span>
+            <span class="service-card__index">06</span>
+            <div class="service-card__body"><h3>МАНИПУЛЯТОР</h3><p>Погрузка из кювета и труднодоступных мест</p></div>
+            <span class="service-card__open" aria-hidden="true">Нажать</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="prices section-space" id="prices" aria-labelledby="prices-title">
+      <div class="section-shell prices__head">
+        <p class="section-kicker">Стоимость</p>
+        <h2 id="prices-title" class="section-title"><span>ЦЕНА ДО</span><span>ВЫЕЗДА</span></h2>
+        <p>Сначала уточняем маршрут, автомобиль и условия погрузки. Затем называем итоговую стоимость — без доплат на месте.</p>
+      </div>
+
+      <div class="prices__stage section-shell">
+        <div class="price-stack" aria-label="Виды расчёта стоимости">
+          <article class="price-row" data-price-row>
+            <span>01</span><h3>ПО ГОРОДУ</h3><p>Точный расчёт по адресу подачи и доставки</p><strong>ПО РАСЧЁТУ</strong>
+          </article>
+          <article class="price-row" data-price-row>
+            <span>02</span><h3>ЗА ГОРОДОМ</h3><p>Стоимость зависит от общего расстояния</p><strong>ПО РАСЧЁТУ</strong>
+          </article>
+          <article class="price-row" data-price-row>
+            <span>03</span><h3>ПОСЛЕ ДТП</h3><p>Учитываем состояние колёс и сложность погрузки</p><strong>ПО РАСЧЁТУ</strong>
+          </article>
+          <article class="price-row" data-price-row>
+            <span>04</span><h3>МАНИПУЛЯТОР</h3><p>Расчёт после оценки доступа к автомобилю</p><strong>ПО РАСЧЁТУ</strong>
+          </article>
+        </div>
+
+        <div class="price-aside">
+          <p>Итоговая цена зависит от расстояния, типа автомобиля и сложности погрузки.</p>
+          <a class="button button--primary" href="#contact"><span>Рассчитать точную стоимость</span><i aria-hidden="true">↗</i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="fleet section-space" id="fleet" aria-labelledby="fleet-title">
+      <div class="section-shell">
+        <header class="fleet__intro">
+          <div><p class="section-kicker">Техника</p><h2 id="fleet-title" class="section-title"><span>ПОД ЗАДАЧУ,</span><span>НЕ НАОБОРОТ</span></h2></div>
+          <p>Подбираем эвакуатор по автомобилю, месту погрузки и состоянию ходовой части.</p>
+        </header>
+
+        <div class="fleet__grid">
+          <article class="fleet-card fleet-card--wide">
+            <img src="assets/service-passenger-v2.webp" alt="Эвакуатор со сдвижной платформой" width="1536" height="1024" loading="lazy">
+            <div><span>01 / ПЛАТФОРМА</span><h3>СДВИЖНАЯ ПЛАТФОРМА</h3><p>Для легковых автомобилей и кроссоверов. Ровная контролируемая погрузка.</p></div>
+          </article>
+          <article class="fleet-card">
+            <img src="assets/service-crane-v2.webp" alt="Эвакуатор с краном-манипулятором" width="1536" height="1024" loading="lazy">
+            <div><span>02 / КМУ</span><h3>МАНИПУЛЯТОР</h3><p>Для сложного доступа, кюветов и заблокированных автомобилей.</p></div>
+          </article>
+          <article class="fleet-card">
+            <img src="assets/service-suv-v2.webp" alt="Эвакуатор для внедорожников" width="1536" height="1024" loading="lazy">
+            <div><span>03 / УСИЛЕННАЯ</span><h3>ДЛЯ ВНЕДОРОЖНИКОВ</h3><p>Платформа под увеличенные габариты автомобиля.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="process__sticky section-shell">
+        <header class="process__head">
+          <p class="section-kicker">Как работаем</p>
+          <h2 id="process-title" class="section-title"><span>ПЯТЬ ШАГОВ.</span><span>ОДИН МАРШРУТ.</span></h2>
+        </header>
+
+        <div class="process__scene">
+          <div class="process__number" aria-hidden="true">01</div>
+          <div class="route-line" aria-hidden="true"><span></span></div>
+          <div class="process__steps">
+            <article class="process-step is-active" data-step="01"><span>Шаг 01</span><h3>ВЫ ЗВОНИТЕ ИЛИ ОСТАВЛЯЕТЕ ЗАЯВКУ</h3><p>Отвечаем круглосуточно и сразу уточняем ситуацию.</p></article>
+            <article class="process-step" data-step="02"><span>Шаг 02</span><h3>УТОЧНЯЕМ АДРЕС И АВТОМОБИЛЬ</h3><p>Фиксируем маршрут, состояние машины и условия подъезда.</p></article>
+            <article class="process-step" data-step="03"><span>Шаг 03</span><h3>ОТПРАВЛЯЕМ БЛИЖАЙШИЙ ЭВАКУАТОР</h3><p>Подбираем подходящую платформу и направляем экипаж.</p></article>
+            <article class="process-step" data-step="04"><span>Шаг 04</span><h3>ПОГРУЖАЕМ АВТОМОБИЛЬ</h3><p>Проверяем фиксацию и бережно поднимаем машину.</p></article>
+            <article class="process-step" data-step="05"><span>Шаг 05</span><h3>ДОСТАВЛЯЕМ В НУЖНУЮ ТОЧКУ</h3><p>В сервис, на стоянку, домой или по другому адресу.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages section-space" id="advantages" aria-labelledby="advantages-title">
+      <div class="section-shell">
+        <h2 id="advantages-title" class="visually-hidden">Почему выбирают ТЯГА 24</h2>
+        <div class="advantages__grid">
+          <article><span>01</span><h3>24/7</h3><p>Принимаем заявки днём и ночью, без выходных.</p></article>
+          <article><span>02</span><h3>ОТ 20 МИНУТ</h3><p>Направляем ближайшую свободную технику.</p></article>
+          <article><span>03</span><h3>БЕРЕЖНАЯ ПОГРУЗКА</h3><p>Учитываем клиренс, привод и состояние колёс.</p></article>
+          <article><span>04</span><h3>ЦЕНА БЕЗ СЮРПРИЗОВ</h3><p>Согласовываем стоимость до подачи эвакуатора.</p></article>
+          <article><span>05</span><h3>ГОРОД И ОБЛАСТЬ</h3><p>Строим маршрут до нужной точки.</p></article>
+          <article><span>06</span><h3>ТЕХНИКА ПОД ЗАДАЧУ</h3><p>Платформа или манипулятор — по ситуации.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="coverage section-space" id="coverage" aria-labelledby="coverage-title">
+      <div class="section-shell">
+        <header class="coverage__head">
+          <div><p class="section-kicker">Зона работы</p><h2 id="coverage-title" class="section-title"><span>ЕКАТЕРИНБУРГ</span><span>И ОБЛАСТЬ</span></h2></div>
+          <p>Подаём технику в любой район города и строим междугородний маршрут. Точное время скажем после адреса.</p>
+        </header>
+
+        <div class="map-actions"><a href="https://yandex.ru/maps/54/yekaterinburg/?ll=60.605702%2C56.838011&amp;z=11" target="_blank" rel="noopener noreferrer">Открыть в Яндекс Картах <i aria-hidden="true">↗</i></a></div>
+        <div class="map-placeholder" role="img" aria-label="Яндекс Карта Екатеринбурга. Карта показана без возможности перемещения и масштабирования.">
+          <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?ll=60.605702%2C56.838011&amp;z=11&amp;l=map" title="Яндекс Карта Екатеринбурга" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+          <span class="map-radius map-radius--one" aria-hidden="true"></span>
+          <span class="map-radius map-radius--two" aria-hidden="true"></span>
+          <div class="map-pin" aria-hidden="true"><strong>ЕКАТЕРИНБУРГ</strong><span>Зона подачи техники</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section-space" id="reviews" aria-labelledby="reviews-title">
+      <div class="section-shell">
+        <header class="reviews__head">
+          <h2 id="reviews-title" class="section-title"><span>НАШИ</span><span>ОТЗЫВЫ</span></h2>
+          <p>Здесь предусмотрены места для подтверждённых отзывов из карт или мессенджеров.</p>
+        </header>
+        <div class="reviews__grid">
+          <article><div class="stars" aria-label="Место для рейтинга">★★★★★</div><blockquote>Добавьте короткий подтверждённый отзыв клиента о подаче, погрузке и доставке.</blockquote><footer><strong>Имя клиента</strong><span>Автомобиль / услуга</span></footer></article>
+          <article><div class="stars" aria-label="Место для рейтинга">★★★★★</div><blockquote>Карточка готова для реального текста без рекламных формулировок и неподтверждённых обещаний.</blockquote><footer><strong>Имя клиента</strong><span>Автомобиль / услуга</span></footer></article>
+          <article><div class="stars" aria-label="Место для рейтинга">★★★★★</div><blockquote>После публикации отзывы на телефоне остаются в естественном вертикальном потоке.</blockquote><footer><strong>Имя клиента</strong><span>Автомобиль / услуга</span></footer></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contact" aria-labelledby="final-title">
+      <div class="final-cta__media" aria-hidden="true"><img src="assets/final-cta-v2.webp" alt="" width="1536" height="1024" loading="lazy"></div>
+      <div class="final-cta__content section-shell">
+        <p class="section-kicker">Помощь на дороге / 24/7</p>
+        <h2 id="final-title"><span>НУЖНА ПОМОЩЬ</span><span>НА ДОРОГЕ?</span></h2>
+        <p>Назовите адрес, марку автомобиля и его состояние. Подберём технику и согласуем стоимость до выезда.</p>
+        <a class="final-cta__phone" href="tel:+73432004040">+7 (343) 200-40-40</a>
+        <dl class="final-cta__meta"><div><dt>Подача</dt><dd>от 20 минут</dd></div><div><dt>Режим</dt><dd>круглосуточно</dd></div></dl>
+        <div class="final-cta__actions">
+          <a class="button button--primary" href="tel:+73432004040"><span>Позвонить</span><i aria-hidden="true">↗</i></a>
+          <a class="button button--ghost" href="tel:+73432004040"><span>Рассчитать стоимость</span><i aria-hidden="true">↗</i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="service-modal" data-service-modal aria-labelledby="service-modal-title">
+    <button class="service-modal__close" type="button" data-modal-close aria-label="Закрыть описание услуги">×</button>
+    <div class="service-modal__visual"><img data-modal-image src="assets/service-passenger-v2.webp" alt="" width="1536" height="1024"></div>
+    <div class="service-modal__content">
+      <span class="service-modal__index" data-modal-index>01 / Услуга</span>
+      <h2 id="service-modal-title" data-modal-title>Легковые автомобили</h2>
+      <p data-modal-lead></p>
+      <div class="service-modal__details">
+        <div><span>Как работаем</span><ol data-modal-steps></ol></div>
+        <div><span>Стоимость</span><strong>По расчёту</strong><p data-modal-price></p></div>
+      </div>
+      <div class="service-modal__actions">
+        <a class="button button--primary" href="#contact" data-modal-contact><span>Вызвать эвакуатор</span><i aria-hidden="true">↗</i></a>
+        <a class="button button--ghost" href="#prices" data-modal-price-link><span>Как считаем цену</span><i aria-hidden="true">↗</i></a>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="footer">
+    <div class="footer__brand section-shell" aria-hidden="true"><span>ТЯГА</span><span>24</span></div>
+    <div class="footer__grid section-shell">
+      <div><span>Связаться</span><a href="tel:+73432004040">+7 (343) 200-40-40</a><small>Телефон / мессенджеры</small></div>
+      <div><span>Работаем</span><strong>Круглосуточно, 24/7</strong><small>Екатеринбург и область</small></div>
+      <div><span>Оператор сайта</span><strong>[Полное наименование]</strong><small>ИНН [указать] · ОГРН/ОГРНИП [указать]<br>[юридический адрес]</small></div>
+      <div class="footer__documents"><span>Документы</span><a href="legal.html#privacy">Политика конфиденциальности</a><a href="legal.html#consent">Согласие на обработку данных</a><a href="legal.html#cookies">Использование cookie</a><a href="legal.html#details">Реквизиты</a></div>
+    </div>
+    <div class="footer__notice section-shell">Информация на сайте носит справочный характер и не является публичной офертой. Перед публикацией заполните реквизиты и проверьте документы с юристом.</div>
+    <div class="footer__bottom section-shell"><span>© 2026 ТЯГА 24</span><span>Эвакуация автомобилей</span></div>
+  </footer>
+</body>
+</html>
